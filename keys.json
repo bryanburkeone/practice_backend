@@ -1,0 +1,12 @@
+{
+  "mongoHost": "ds117431.mlab.com",
+  "mongoPort": "17431",
+  "mongoDatabase": "anderson_deploy",
+  "mongoUser": "bryan-serve",
+  "mongoPass": "suzuki123",
+  "mongoDevHost": "ds117431.mlab.com",
+  "mongoDevPort": "17431",
+  "mongoDevDatabase": "anderson_deploy",
+  "mongoDevUser": "bryan-serve",
+  "mongoDevPass": "suzuki123"
+}
