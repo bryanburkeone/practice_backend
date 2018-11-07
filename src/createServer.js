@@ -10,10 +10,10 @@ const User = require('./models/user');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-let user = nconf.get('mongoUser');
-let pass = nconf.get('mongoPass');
-let host = nconf.get('mongoHost');
-let port = nconf.get('mongoPort');
+let user = nconf.get('mongoDevUser');
+let pass = nconf.get('mongoDevPass');
+let host = nconf.get('mongoDevHost');
+let port = nconf.get('mongoDevPort');
 
 if(!isProduction){
     user = nconf.get('mongoDevUser');
