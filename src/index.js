@@ -16,11 +16,11 @@ server.express.use((req, res, next) => {
     next();
 });
 
-server.start({
+server.start(
         // cors: {
         //     credentials: true,
         //     origin: process.env.CLIENT_URL,
         // },
-    },
+
     start => { console.log(`server is now running on port ${start.port}`);
     });
