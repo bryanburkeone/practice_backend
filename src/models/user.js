@@ -23,10 +23,16 @@ const userSchema = new mongoose.Schema({
         },
         password: {
             type: String,
-            // required: [true, 'We want you to be secure, please help'],
+            required: [true, 'We want you to be secure, please help'],
         },
         profileImageUrl: {
             type: String
+        },
+        resetToken:  {
+            type: String
+        },
+        resetTokenExpiry: {
+            type: Number
         },
     },
     {

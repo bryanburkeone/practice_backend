@@ -7,9 +7,12 @@ const {UserType, UserMutation, UserQuery} = require("./types/user");
 //schema for graphql
 const typeDefs = `
     scalar Date
+
     ${UserType}
+
     type Query {
         ${UserQuery}
+  
     }
     type Mutation {
         ${UserMutation}

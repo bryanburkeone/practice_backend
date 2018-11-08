@@ -1,27 +1,13 @@
 const lodash = require('lodash');
 const { GraphQLScalarType } = require('graphql');
 const { Kind } = require('graphql/language');
-
-//mongoose models
 const User = require('./models/user');
-
-
 //resolver imports from types files
-const {UserQueryResolver, UserMutationResolver, UserNested} = require("./types/user");
-
-
+const {UserQueryResolver, UserMutationResolver } = require("./types/user");
 //Merged Query Resolvers
-const Queries =
-    lodash.merge(
-        UserQueryResolver,
-    );
-
+const Queries = lodash.merge( UserQueryResolver );
 //merged mutation resolvers
-const Mutations =
-    lodash.merge(
-        UserMutationResolver,
-    );
-
+const Mutations = lodash.merge( UserMutationResolver );
 // final product for graphql resolvers
 const resolvers = {
     Date: new GraphQLScalarType({
