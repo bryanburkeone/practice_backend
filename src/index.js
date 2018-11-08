@@ -19,7 +19,7 @@ server.express.use((req, res, next) => {
 server.start({
     cors: {
         credentials: true,
-        origin: process.env.CLIENT_URL,
+        origin: [ process.env.CLIENT_URL, 'http://localhost:7777' ]
     },
 },
     start => { console.log(`server is now running on port ${start.port}`);
