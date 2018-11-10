@@ -95,11 +95,11 @@ const UserMutationResolver = {
     login: async(parent, {email, password }, ctx, info) => {
         const user = await ctx.User.findOne({email});
         if(!user) {
-            throw new Error('Sorry you need to sign up with this email ${email}');
+            throw new Error('Sorry you need to sign up with an email ');
         }
         const valid = await bcrypt.compare(password, user.password);
         if(!valid) {
-            throw new Error('Are you sure this is your account?')
+            throw new Error('Wrong password')
         }
         const token = jwt.sign({userId: user._id}, process.env.APP_SECRET);
         ctx.response.cookie('token', token, {
