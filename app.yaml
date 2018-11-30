@@ -1,4 +1,5 @@
 runtime: nodejs
 env: flex
+service: backend
 env_variables:
   NODE_ENV: "production"
