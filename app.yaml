@@ -2,3 +2,7 @@ runtime: nodejs
 env: flex
 env_variables:
   NODE_ENV: "production"
+  CLIENT_URL: "http://localhost:7777"
+  APP_SECRET: "rapidjaguarhasasecret"
+  STRIPE_SECRET: "paidforrapidjaguar"
+  PORT: "4444"
