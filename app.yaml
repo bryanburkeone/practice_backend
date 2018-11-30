@@ -5,4 +5,4 @@ env_variables:
   CLIENT_URL: "http://localhost:7777"
   APP_SECRET: "rapidjaguarhasasecret"
   STRIPE_SECRET: "paidforrapidjaguar"
-  PORT: "4444"
+  PORT: 4444
