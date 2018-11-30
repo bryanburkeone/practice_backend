@@ -7,7 +7,6 @@ const { promisify } = require('util');
 // const {transport, makeNiceEmail} = require('../mail');
 
 const UserType = `
-    
     type User {
         _id: String!
         email: String!
